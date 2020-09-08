@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лб2</title>
+
+    <!-- Использование CSS с помошью style -->
+    <style>
+        
+        .container{
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <!-- Подключение внешнего CSS файла -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>  
+    <header>
+        <div class="container">
+            <h1 class="title" id="main-title">
+                Лабораторная работа 2 (Вариант 2)
+            </h1>
+        </div>
+    </header>
+    <section class="inline" style="height: 50px; background-color: rgb(255, 164, 45); padding-top: 150px; padding-bottom: 100px;">
+        <div class="container">
+            <h2 class="title inline__title" style="color: white;font-family: 'MLight';">
+                Данная секция стилизована с помощью inline стилей
+            </h2>
+        </div>
+    </section>
+    <section class="positioning">
+        <div class="container">
+            <h2 class="title positioning__title">
+                Секция для демонстрации позиционирования и float
+            </h2>
+            <div class="positioning__items cards__item--regular">
+                <div class="cards__item">
+                    <p class="cards__text">
+                        Карточка 1 
+                        <br>
+                        <br>
+                        (обычный элемент)
+                    </p>
+                </div>
+                <div class="cards__item cards__item--relative">
+                    <p class="cards__text">
+                        Карточка 2 
+                        <br>
+                        <br>
+                        (сдвиг карточки с relative <br>
+                        и использование absolute)
+                    </p>
+                    <div class="cards__over">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list">
+        <div class="container">
+            <h2 class="title list__title">
+                Секция с кастомными пунктами списка
+            </h2>
+            <ul class="list__ul list-unordered">
+                <li>
+                    Первый пункт
+                </li>
+                <li>
+                    Второй пункт
+                </li>
+                <li>
+                    Третий пункт
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="flex"> 
+        <div class="container">
+            <h2 class="title flex__title">
+                Секция использования flex-box
+            </h2>
+            <div class="flex__items flex-wrap">
+                <div class="flex-wrap__item">
+
+                </div>
+                <div class="flex-wrap__item flex-wrap__item--long">
+                    
+                </div>
+                <div class="flex-wrap__item">
+                    
+                </div>
+                <div class="flex-wrap__item">
+                    
+                </div>
+                <div class="flex-wrap__item">
+                    
+                </div>
+                <div class="flex-wrap__item">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="title footer__title">
+                Лабораторная работа выполнена студентом <br>
+                группы КИУКИу-19-2 Бондарчуком П.С.
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>

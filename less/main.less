@@ -1,0 +1,134 @@
+@import "import/_imported.less";
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+#main-title{
+    font-size: 40px;
+    color: rgb(255, 225, 169);
+    font-family: 'MBlack';
+    text-transform: uppercase;
+}
+header{
+    background: linear-gradient(150deg, rgb(100, 47, 12) 0%, rgb(128, 58, 26) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 3;
+}
+
+
+.positioning{
+    height: 800px;
+    &__title{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: 'MLight';
+    }
+}
+.cards{
+    width: 100%;
+    margin-top: 50px;
+    &__text{
+        font-family: 'MBlack';
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    &__item{
+        width: 40%;
+        height: 600px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 164, 45);
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        &--relative{
+            position: relative;
+            top: 30px;
+        }
+    }
+    &__over{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        right: 10%;
+        background-color: rgba(255, 255, 255, 0.247);
+        z-index: 1;
+    }
+}
+
+.list{
+    background-color: rgb(255, 164, 45);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title{
+        
+        margin-bottom: 50px;
+        font-family: 'MLight';
+        color: white;
+    }
+}
+
+.list-unordered{
+    color:white;
+    font-size: 25px;
+    width: 250px;
+    font-family: 'MBlack';
+    margin-left: auto;
+    margin-right: auto;
+    list-style-image: url(../img/yolk.png);
+    & li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &::marker{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.flex{
+    &__title{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-family: 'MLight';
+        color: black;
+    }
+}
+
+.flex-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &__item{
+        width: 30%;
+        height: 300px;
+        background-color: rgb(255, 164, 45);
+        margin-bottom: 5%;
+        &--long{
+            height: 600px;
+        }
+    }
+}
+
+.footer{
+    background-color: rgb(255, 164, 45);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title{
+        font-family: 'MLight';
+        color: white;
+    }
+}
